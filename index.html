@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>더원서울안과 | 웹 블로그</title>
+    <meta name="description" content="더원서울안과 웹 블로그" />
+    <link rel="icon" href="./theone.ico" />
+    <link rel="shortcut icon" href="./theone.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문 바로가기</a>
+
+    <!-- 상단 배너 -->
+    <div class="top-banner">
+      <div class="top-banner-inner">
+        <a href="#none">
+          <img src="./assets/top-banner-01.png" alt="탑배너" />
+        </a>
+      </div>
+    </div>
+
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="container header-inner">
+        <a class="logo-area" href="#" aria-label="더원서울안과 홈">
+          <span class="logo" aria-hidden="true">
+            <img src="./assets/logo.svg" alt="더원서울안과 로고" />
+          </span>
+          <span class="logo-text">BLOG</span>
+        </a>
+
+        <div class="header-quick-links-group">
+          <a href="#" class="header-quick-links home">
+            <span class="ico-box home" aria-hidden="true">
+              <img src="./assets/header-quick-ico-home.svg" alt="강남 더원서울안과 바로가기" />
+            </span>
+            <span class="text-box">강남 더원서울안과 바로가기</span>
+          </a>
+          <a href="#" class="header-quick-links center">
+            <span class="ico-box center" aria-hidden="true">
+              <img src="./assets/header-quick-ico-center.svg" alt="녹내장·백내장센터 바로가기" />
+            </span>
+            <span class="text-box">녹내장·백내장센터</span>
+          </a>
+          <a href="#" class="header-quick-links tv">
+            <span class="ico-box-icon tv" aria-hidden="true">
+              <img src="./assets/header-quick-ico-tv.svg" alt="더원서울안과 TV 바로가기" />
+            </span>
+            <span class="text-box">더원서울안과 TV</span>
+          </a>
+          <a href="#" class="header-quick-links talk">
+            <span class="ico-box talk" aria-hidden="true">
+              <img src="./assets/header-quick-ico-talk.svg" alt="더원의 허심탄회 바로가기" />
+            </span>
+            <span class="text-box">더원의 허심탄회</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- GNB + 검색 -->
+      <div class="gnb">
+        <div class="container header-gnb">
+          <nav class="gnb-list" aria-label="주요 메뉴">
+            <div class="gnb-item">
+              <a class="gnb-link is-active" href="#">홈</a>
+              <div class="gnb-dropdown">
+                <a href="#" class="gnb-dropdown-link">눈 속 가장 깊은 이야기</a>
+                <a href="#" class="gnb-dropdown-link">조용히 시야를 훔치는 병</a>
+                <a href="#" class="gnb-dropdown-link">흐려진 세상을 다시 선명하게</a>
+                <a href="#" class="gnb-dropdown-link">안경 벗는 순간의 기술</a>
+                <a href="#" class="gnb-dropdown-link">멀어지는 세상, 가까이 보기</a>
+                <a href="#" class="gnb-dropdown-link">눈 건강 리포트</a>
+              </div>
+            </div>
+            <div class="gnb-item">
+              <a class="gnb-link" href="#">눈 이야기</a>
+            </div>
+            <div class="gnb-item">
+              <a class="gnb-link" href="#">의료진 스토리</a>
+            </div>
+            <div class="gnb-item">
+              <a class="gnb-link" href="#">멤버 스토리</a>
+            </div>
+            <div class="gnb-item">
+              <a class="gnb-link" href="#">고객 스토리</a>
+            </div>
+            <div class="gnb-item">
+              <a class="gnb-link" href="#">센터 소식</a>
+            </div>
+          </nav>
+
+          <div class="header-search">
+            <div class="search-box">
+              <span class="search-icon" aria-hidden="true">
+                <img src="./assets/search-ico.svg" alt="검색 아이콘" />
+              </span>
+              <input type="search" class="search-input" placeholder="검색어를 입력하세요" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 히어로 영역 -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <!-- 좌측 큰 카드 -->
+          <article class="hero-feature">
+            <div class="hero-feature-main">
+              <a href="#none" class="hero-feature-image" aria-hidden="true">
+                <img src="./assets/hero-feature-image.png" alt="선릉역백내장 빛 번짐이 증가하는 시각 변화" />
+              </a>
+              <div class="hero-feature-text">
+                <div class="hero-feature-label">노안백내장</div>
+                <h1 class="hero-feature-title">
+                  선릉역백내장 빛 번짐이 증가하는 시각 변화 변화 변화 변화 변화 선릉역백내장 빛 번짐이 증가하는 시각
+                  변화 변화 변화 변화 변화
+                </h1>
+                <div class="hero-feature-info">
+                  <div class="hero-feature-author">
+                    <div class="hero-feature-author-img" aria-hidden="true"></div>
+                    <div class="hero-feature-author-info">
+                      <p class="hero-feature-author-name">더원서울안과</p>
+                      <p class="hero-feature-date">2026년 1월 8일</p>
+                    </div>
+                  </div>
+                  <div class="hero-feature-actions">
+                    <button class="hero-action-btn hero-action-comment" type="button" aria-label="댓글">
+                      <span class="hero-action-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                          <path
+                            d="M2.5 7.5H10.1667V6.5H2.5V7.5ZM2.5 5.5H10.1667V4.5H2.5V5.5ZM2.5 3.5H10.1667V2.5H2.5V3.5ZM12.6667 12.359L10.3077 10H1.20517C0.868389 10 0.583333 9.88333 0.35 9.65C0.116667 9.41667 0 9.13161 0 8.79483V1.20517C0 0.868389 0.116667 0.583333 0.35 0.35C0.583333 0.116667 0.868389 0 1.20517 0H11.4615C11.7983 0 12.0833 0.116667 12.3167 0.35C12.55 0.583333 12.6667 0.868389 12.6667 1.20517V12.359ZM1.20517 9H10.7333L11.6667 9.92317V1.20517C11.6667 1.15383 11.6453 1.10683 11.6025 1.06417C11.5598 1.02139 11.5128 1 11.4615 1H1.20517C1.15383 1 1.10683 1.02139 1.06417 1.06417C1.02139 1.10683 1 1.15383 1 1.20517V8.79483C1 8.84617 1.02139 8.89317 1.06417 8.93583C1.10683 8.97861 1.15383 9 1.20517 9Z"
+                            fill="#fff"
+                          />
+                        </svg>
+                      </span>
+                      <span class="hero-action-text">2 댓글</span>
+                    </button>
+                    <button class="hero-action-btn hero-action-share" type="button" aria-label="공유">
+                      <span class="hero-action-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                          <path
+                            d="M8.12683 1.7025L0.847333 8.982C0.755 9.07433 0.639 9.12155 0.499333 9.12367C0.359556 9.12578 0.241389 9.07856 0.144833 8.982C0.0482778 8.88544 0 8.76839 0 8.63083C0 8.49317 0.0482778 8.37606 0.144833 8.2795L7.42433 1H3.2935C3.15183 1 3.03306 0.952055 2.93717 0.856167C2.84139 0.760278 2.7935 0.6415 2.7935 0.499833C2.7935 0.358055 2.84139 0.239333 2.93717 0.143667C3.03306 0.0478888 3.15183 0 3.2935 0H8.52417C8.69494 0 8.83805 0.0577782 8.9535 0.173334C9.06905 0.288778 9.12683 0.431888 9.12683 0.602666V5.83333C9.12683 5.975 9.07889 6.09378 8.983 6.18967C8.88711 6.28544 8.76833 6.33333 8.62667 6.33333C8.48489 6.33333 8.36617 6.28544 8.2705 6.18967C8.17472 6.09378 8.12683 5.975 8.12683 5.83333V1.7025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 우측 최신 글 리스트 (01/02/03) -->
+          <aside class="basic-list" aria-label="최신 글">
+            <ul class="basic-list-items">
+              <li class="basic-list-item">
+                <a href="#none" aria-hidden="true">
+                  <div class="basic-list-no">01</div>
+                  <div class="basic-list-body">
+                    <p class="basic-list-link">논현망막전막 시야 왜곡이 나타나는 망막 구조</p>
+                    <span class="basic-list-meta">2026년 1월 8일</span>
+                  </div>
+                  <div class="basic-list-thumb" aria-hidden="true">
+                    <div class="image-box">
+                      <img src="./assets/hero-list-sample-01.png" alt="논현망막전막 시야 왜곡이 나타나는 망막 구조" />
+                    </div>
+                    <div class="ico-box">
+                      <i class="ico img"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="basic-list-item">
+                <a href="#none" aria-hidden="true">
+                  <div class="basic-list-no">02</div>
+                  <div class="basic-list-body">
+                    <p class="basic-list-link">잠실망막박리 망막 분리 시 나타나는 시각적 변화</p>
+                    <span class="basic-list-meta">2026년 1월 7일</span>
+                  </div>
+                  <div class="basic-list-thumb" aria-hidden="true">
+                    <div class="image-box">
+                      <img src="./assets/hero-list-sample-02.png" alt="논현망막전막 시야 왜곡이 나타나는 망막 구조" />
+                    </div>
+                    <div class="ico-box">
+                      <i class="ico video"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="basic-list-item">
+                <a href="#none" aria-hidden="true">
+                  <div class="basic-list-no">03</div>
+                  <div class="basic-list-body">
+                    <p class="basic-list-link">
+                      삼성황반변성 중심부 인식이 흐려지는 시각 특징 삼성황반변성 중심부 인식이 흐려지는 시각 특징
+                      삼성황반변성 중심부 인식이 흐려지는 시각 특징 삼성황반변성 중심부 인식이 흐려지는 시각 특징
+                      삼성황반변성 중심부 인식이 흐려지는 시각 특징
+                    </p>
+                    <p class="basic-list-meta">2026년 1월 6일</p>
+                  </div>
+                  <div class="basic-list-thumb" aria-hidden="true">
+                    <div class="image-box">
+                      <img src="./assets/hero-list-sample-03.png" alt="논현망막전막 시야 왜곡이 나타나는 망막 구조" />
+                    </div>
+                    <div class="ico-box">
+                      <i class="ico img"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- 에디터 픽 -->
+      <section class="editor-pick">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-left">
+              <span class="badge-blue">놓치지 말아야 할 에디터 Pick! ✍️</span>
+            </div>
+            <button type="button" class="text-link">
+              <div>View More</div>
+            </button>
+            <div class="line"></div>
+          </div>
+
+          <div class="thumb-grid">
+            <article class="thumb-card">
+              <a href="#none" aria-hidden="true">
+                <div class="thumb-img" aria-hidden="true">
+                  <img src="./assets/sample-image-01.jpg" alt="교대황반변성 시야 한가운데가 안정되지 않는 느낌" />
+                </div>
+              </a>
+              <div class="thumb-caption">
+                <div class="thumb-label">눈 속 가장 깊은 이야기</div>
+                <h3 class="thumb-title">교대황반변성 시야 한가운데가 안정되지 않는 느낌</h3>
+                <div class="post-row-info">
+                  <div class="post-row-author">
+                    <span class="post-row-author-img" aria-hidden="true">
+                      <img src="./assets/logo-small.svg" alt="더원서울안과" />
+                    </span>
+                    <div>
+                      <p class="post-row-author-name">더원서울안과</p>
+                      <p class="post-row-date">2026년 1월 8일</p>
+                    </div>
+                  </div>
+                  <div class="post-row-actions">
+                    <button class="post-action-btn" aria-label="공유">
+                      <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                          <path
+                            d="M9.537 12.6667C9.038 12.6667 8.61433 12.4922 8.266 12.1432C7.91778 11.7942 7.74367 11.3704 7.74367 10.8718C7.74367 10.8052 7.76672 10.6432 7.81283 10.3858L3.07183 7.59483C2.91117 7.7615 2.72028 7.89206 2.49917 7.9865C2.27806 8.08095 2.04117 8.12817 1.7885 8.12817C1.29172 8.12817 0.869444 7.95294 0.521667 7.6025C0.173889 7.25206 0 6.829 0 6.33333C0 5.83767 0.173889 5.41461 0.521667 5.06417C0.869444 4.71372 1.29172 4.5385 1.7885 4.5385C2.04117 4.5385 2.27806 4.58572 2.49917 4.68017C2.72028 4.77461 2.91117 4.90517 3.07183 5.07183L7.81283 2.28717C7.78639 2.20517 7.76822 2.12483 7.75833 2.04617C7.74856 1.9675 7.74367 1.88372 7.74367 1.79483C7.74367 1.29628 7.91828 0.8725 8.2675 0.5235C8.61683 0.1745 9.041 0 9.54 0C10.039 0 10.4626 0.174667 10.8108 0.524C11.1592 0.873222 11.3333 1.29733 11.3333 1.79633C11.3333 2.29533 11.1588 2.719 10.8098 3.06733C10.4608 3.41556 10.0371 3.58967 9.5385 3.58967C9.28461 3.58967 9.0485 3.54139 8.83017 3.44483C8.61172 3.34828 8.42217 3.21667 8.2615 3.05L3.5205 5.841C3.54694 5.92311 3.56511 6.00345 3.575 6.082C3.58478 6.16067 3.58967 6.24444 3.58967 6.33333C3.58967 6.42222 3.58478 6.506 3.575 6.58467C3.56511 6.66322 3.54694 6.74356 3.5205 6.82567L8.2615 9.61667C8.42217 9.45 8.61172 9.31839 8.83017 9.22183C9.0485 9.12528 9.28461 9.077 9.5385 9.077C10.0371 9.077 10.4608 9.25161 10.8098 9.60083C11.1588 9.95017 11.3333 10.3743 11.3333 10.8733C11.3333 11.3723 11.1587 11.7959 10.8093 12.1442C10.4601 12.4925 10.036 12.6667 9.537 12.6667Z"
+                            fill="#404040"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <button class="post-action-btn" aria-label="외부 링크">
+                      <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path
+                            d="M11.3334 5.36925L4.05388 12.6487C3.96154 12.7411 3.84554 12.7883 3.70588 12.7904C3.5661 12.7925 3.44793 12.7453 3.35138 12.6487C3.25482 12.5522 3.20654 12.4351 3.20654 12.2976C3.20654 12.1599 3.25482 12.0428 3.35138 11.9462L10.6309 4.66675H6.50004C6.35838 4.66675 6.2396 4.6188 6.14371 4.52291C6.04793 4.42703 6.00004 4.30825 6.00004 4.16658C6.00004 4.0248 6.04793 3.90608 6.14371 3.81041C6.2396 3.71464 6.35838 3.66675 6.50004 3.66675H11.7307C11.9015 3.66675 12.0446 3.72453 12.16 3.84008C12.2756 3.95553 12.3334 4.09864 12.3334 4.26941V9.50008C12.3334 9.64175 12.2854 9.76053 12.1895 9.85641C12.0937 9.95219 11.9749 10.0001 11.8332 10.0001C11.6914 10.0001 11.5727 9.95219 11.477 9.85641C11.3813 9.76053 11.3334 9.64175 11.3334 9.50008V5.36925Z"
+                            fill="#404040"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="thumb-card">
+              <a href="#none" aria-hidden="true">
+                <div class="thumb-img" aria-hidden="true">
+                  <img src="./assets/sample-image-02.jpg" alt="교대황반변성 시야 한가운데가 안정되지 않는 느낌" />
+                </div>
+              </a>
+              <div class="thumb-caption">
+                <div class="thumb-label">조용히 시야를 훔치는 병</div>
+                <h3 class="thumb-title">교대황반변성 시야 한가운데가 안정되지 않는 느낌</h3>
+                <div class="post-row-info">
+                  <div class="post-row-author">
+                    <span class="post-row-author-img" aria-hidden="true">
+                      <img src="./assets/logo-small.svg" alt="더원서울안과" />
+                    </span>
+                    <div>
+                      <p class="post-row-author-name">더원서울안과</p>
+                      <p class="post-row-date">2026년 1월 8일</p>
+                    </div>
+                  </div>
+                  <div class="post-row-actions">
+                    <button class="post-action-btn" aria-label="공유">
+                      <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                          <path
+                            d="M9.537 12.6667C9.038 12.6667 8.61433 12.4922 8.266 12.1432C7.91778 11.7942 7.74367 11.3704 7.74367 10.8718C7.74367 10.8052 7.76672 10.6432 7.81283 10.3858L3.07183 7.59483C2.91117 7.7615 2.72028 7.89206 2.49917 7.9865C2.27806 8.08095 2.04117 8.12817 1.7885 8.12817C1.29172 8.12817 0.869444 7.95294 0.521667 7.6025C0.173889 7.25206 0 6.829 0 6.33333C0 5.83767 0.173889 5.41461 0.521667 5.06417C0.869444 4.71372 1.29172 4.5385 1.7885 4.5385C2.04117 4.5385 2.27806 4.58572 2.49917 4.68017C2.72028 4.77461 2.91117 4.90517 3.07183 5.07183L7.81283 2.28717C7.78639 2.20517 7.76822 2.12483 7.75833 2.04617C7.74856 1.9675 7.74367 1.88372 7.74367 1.79483C7.74367 1.29628 7.91828 0.8725 8.2675 0.5235C8.61683 0.1745 9.041 0 9.54 0C10.039 0 10.4626 0.174667 10.8108 0.524C11.1592 0.873222 11.3333 1.29733 11.3333 1.79633C11.3333 2.29533 11.1588 2.719 10.8098 3.06733C10.4608 3.41556 10.0371 3.58967 9.5385 3.58967C9.28461 3.58967 9.0485 3.54139 8.83017 3.44483C8.61172 3.34828 8.42217 3.21667 8.2615 3.05L3.5205 5.841C3.54694 5.92311 3.56511 6.00345 3.575 6.082C3.58478 6.16067 3.58967 6.24444 3.58967 6.33333C3.58967 6.42222 3.58478 6.506 3.575 6.58467C3.56511 6.66322 3.54694 6.74356 3.5205 6.82567L8.2615 9.61667C8.42217 9.45 8.61172 9.31839 8.83017 9.22183C9.0485 9.12528 9.28461 9.077 9.5385 9.077C10.0371 9.077 10.4608 9.25161 10.8098 9.60083C11.1588 9.95017 11.3333 10.3743 11.3333 10.8733C11.3333 11.3723 11.1587 11.7959 10.8093 12.1442C10.4601 12.4925 10.036 12.6667 9.537 12.6667Z"
+                            fill="#404040"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <button class="post-action-btn" aria-label="외부 링크">
+                      <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path
+                            d="M11.3334 5.36925L4.05388 12.6487C3.96154 12.7411 3.84554 12.7883 3.70588 12.7904C3.5661 12.7925 3.44793 12.7453 3.35138 12.6487C3.25482 12.5522 3.20654 12.4351 3.20654 12.2976C3.20654 12.1599 3.25482 12.0428 3.35138 11.9462L10.6309 4.66675H6.50004C6.35838 4.66675 6.2396 4.6188 6.14371 4.52291C6.04793 4.42703 6.00004 4.30825 6.00004 4.16658C6.00004 4.0248 6.04793 3.90608 6.14371 3.81041C6.2396 3.71464 6.35838 3.66675 6.50004 3.66675H11.7307C11.9015 3.66675 12.0446 3.72453 12.16 3.84008C12.2756 3.95553 12.3334 4.09864 12.3334 4.26941V9.50008C12.3334 9.64175 12.2854 9.76053 12.1895 9.85641C12.0937 9.95219 11.9749 10.0001 11.8332 10.0001C11.6914 10.0001 11.5727 9.95219 11.477 9.85641C11.3813 9.76053 11.3334 9.64175 11.3334 9.50008V5.36925Z"
+                            fill="#404040"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="thumb-card">
+              <a href="#none" aria-hidden="true">
+                <div class="thumb-img" aria-hidden="true">
+                  <img src="./assets/sample-image-03.jpg" alt="교대황반변성 시야 한가운데가 안정되지 않는 느낌" />
+                </div>
+              </a>
+              <div class="thumb-caption">
+                <div class="thumb-label">백내장 클리닉</div>
+                <h3 class="thumb-title">
+                  교대황반변성 시야 한가운데가 안정되지 않는 느낌 교대황반변성 시야 한가운데가 안정되지 않는 느낌
+                  교대황반변성 시야 한가운데가 안정되지 않는 느낌 교대황반변성 시야 한가운데가 안정되지 않는 느낌
+                  교대황반변성 시야 한가운데가 안정되지 않는 느낌
+                </h3>
+                <div class="post-row-info">
+                  <div class="post-row-author">
+                    <span class="post-row-author-img" aria-hidden="true">
+                      <img src="./assets/logo-small.svg" alt="더원서울안과" />
+                    </span>
+                    <div>
+                      <p class="post-row-author-name">더원서울안과</p>
+                      <p class="post-row-date">2026년 1월 8일</p>
+                    </div>
+                  </div>
+                  <div class="post-row-actions">
+                    <button class="post-action-btn" aria-label="공유">
+                      <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                          <path
+                            d="M9.537 12.6667C9.038 12.6667 8.61433 12.4922 8.266 12.1432C7.91778 11.7942 7.74367 11.3704 7.74367 10.8718C7.74367 10.8052 7.76672 10.6432 7.81283 10.3858L3.07183 7.59483C2.91117 7.7615 2.72028 7.89206 2.49917 7.9865C2.27806 8.08095 2.04117 8.12817 1.7885 8.12817C1.29172 8.12817 0.869444 7.95294 0.521667 7.6025C0.173889 7.25206 0 6.829 0 6.33333C0 5.83767 0.173889 5.41461 0.521667 5.06417C0.869444 4.71372 1.29172 4.5385 1.7885 4.5385C2.04117 4.5385 2.27806 4.58572 2.49917 4.68017C2.72028 4.77461 2.91117 4.90517 3.07183 5.07183L7.81283 2.28717C7.78639 2.20517 7.76822 2.12483 7.75833 2.04617C7.74856 1.9675 7.74367 1.88372 7.74367 1.79483C7.74367 1.29628 7.91828 0.8725 8.2675 0.5235C8.61683 0.1745 9.041 0 9.54 0C10.039 0 10.4626 0.174667 10.8108 0.524C11.1592 0.873222 11.3333 1.29733 11.3333 1.79633C11.3333 2.29533 11.1588 2.719 10.8098 3.06733C10.4608 3.41556 10.0371 3.58967 9.5385 3.58967C9.28461 3.58967 9.0485 3.54139 8.83017 3.44483C8.61172 3.34828 8.42217 3.21667 8.2615 3.05L3.5205 5.841C3.54694 5.92311 3.56511 6.00345 3.575 6.082C3.58478 6.16067 3.58967 6.24444 3.58967 6.33333C3.58967 6.42222 3.58478 6.506 3.575 6.58467C3.56511 6.66322 3.54694 6.74356 3.5205 6.82567L8.2615 9.61667C8.42217 9.45 8.61172 9.31839 8.83017 9.22183C9.0485 9.12528 9.28461 9.077 9.5385 9.077C10.0371 9.077 10.4608 9.25161 10.8098 9.60083C11.1588 9.95017 11.3333 10.3743 11.3333 10.8733C11.3333 11.3723 11.1587 11.7959 10.8093 12.1442C10.4601 12.4925 10.036 12.6667 9.537 12.6667Z"
+                            fill="#404040"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <button class="post-action-btn" aria-label="외부 링크">
+                      <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path
+                            d="M11.3334 5.36925L4.05388 12.6487C3.96154 12.7411 3.84554 12.7883 3.70588 12.7904C3.5661 12.7925 3.44793 12.7453 3.35138 12.6487C3.25482 12.5522 3.20654 12.4351 3.20654 12.2976C3.20654 12.1599 3.25482 12.0428 3.35138 11.9462L10.6309 4.66675H6.50004C6.35838 4.66675 6.2396 4.6188 6.14371 4.52291C6.04793 4.42703 6.00004 4.30825 6.00004 4.16658C6.00004 4.0248 6.04793 3.90608 6.14371 3.81041C6.2396 3.71464 6.35838 3.66675 6.50004 3.66675H11.7307C11.9015 3.66675 12.0446 3.72453 12.16 3.84008C12.2756 3.95553 12.3334 4.09864 12.3334 4.26941V9.50008C12.3334 9.64175 12.2854 9.76053 12.1895 9.85641C12.0937 9.95219 11.9749 10.0001 11.8332 10.0001C11.6914 10.0001 11.5727 9.95219 11.477 9.85641C11.3813 9.76053 11.3334 9.64175 11.3334 9.50008V5.36925Z"
+                            fill="#404040"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 중간 블루 배너 -->
+      <section class="mid-banner">
+        <div class="mid-banner-inner">
+          <a href="#none">
+            <img src="./assets/mid-banner-01.png" alt="중간배너" />
+          </a>
+        </div>
+      </section>
+
+      <!-- 메인 피드 + 우측 사이드 -->
+      <section class="section feed">
+        <div class="container feed-grid">
+          <!-- 왼쪽 리스트 -->
+          <div class="feed-main">
+            <header class="section-head">
+              <div class="section-left">
+                <span class="badge-blue small">방금 업로드 📌</span>
+              </div>
+              <button type="button" class="text-link">View More</button>
+              <div class="line"></div>
+            </header>
+
+            <div class="post-list">
+              <article class="post-row">
+                <a href="#" class="post-row-thumb" aria-label="게시글 열기">
+                  <span class="post-row-img" aria-hidden="true">
+                    <img src="./assets/sample-image-01.jpg" alt="교대황반변성 시야 한가운데가 안정되지 않는 느낌" />
+                  </span>
+                </a>
+                <div class="post-row-body">
+                  <div class="post-row-label">의료진 스토리</div>
+                  <h2 class="post-row-title">
+                    교대황반변성 시야 한가운데가 안정되지 않는 느낌 교대황반변성 시야 한가운데가 안정되지 않는 느낌
+                    교대황반변성 시야 한가운데가 안정되지 않는 느낌 교대황반변성 시야 한가운데가 안정되지 않는 느낌
+                    교대황반변성 시야 한가운데가 안정되지 않는 느낌 교대황반변성 시야 한가운데가 안정되지 않는 느낌
+                  </h2>
+                  <p class="post-row-desc">
+                    모든 국민은 양심의 자유를 가진다. 이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에
+                    속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를
+                    행한다.
+                  </p>
+                  <div class="post-row-info">
+                    <div class="post-row-author">
+                      <span class="post-row-author-img" aria-hidden="true">
+                        <img src="./assets/logo-small.svg" alt="더원서울안과" />
+                      </span>
+                      <div>
+                        <p class="post-row-author-name">더원서울안과</p>
+                        <p class="post-row-date">2026년 1월 8일</p>
+                      </div>
+                    </div>
+                    <div class="post-row-actions">
+                      <button class="post-action-btn" aria-label="공유">
+                        <span aria-hidden="true">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="13"
+                            viewBox="0 0 12 13"
+                            fill="none"
+                          >
+                            <path
+                              d="M9.537 12.6667C9.038 12.6667 8.61433 12.4922 8.266 12.1432C7.91778 11.7942 7.74367 11.3704 7.74367 10.8718C7.74367 10.8052 7.76672 10.6432 7.81283 10.3858L3.07183 7.59483C2.91117 7.7615 2.72028 7.89206 2.49917 7.9865C2.27806 8.08095 2.04117 8.12817 1.7885 8.12817C1.29172 8.12817 0.869444 7.95294 0.521667 7.6025C0.173889 7.25206 0 6.829 0 6.33333C0 5.83767 0.173889 5.41461 0.521667 5.06417C0.869444 4.71372 1.29172 4.5385 1.7885 4.5385C2.04117 4.5385 2.27806 4.58572 2.49917 4.68017C2.72028 4.77461 2.91117 4.90517 3.07183 5.07183L7.81283 2.28717C7.78639 2.20517 7.76822 2.12483 7.75833 2.04617C7.74856 1.9675 7.74367 1.88372 7.74367 1.79483C7.74367 1.29628 7.91828 0.8725 8.2675 0.5235C8.61683 0.1745 9.041 0 9.54 0C10.039 0 10.4626 0.174667 10.8108 0.524C11.1592 0.873222 11.3333 1.29733 11.3333 1.79633C11.3333 2.29533 11.1588 2.719 10.8098 3.06733C10.4608 3.41556 10.0371 3.58967 9.5385 3.58967C9.28461 3.58967 9.0485 3.54139 8.83017 3.44483C8.61172 3.34828 8.42217 3.21667 8.2615 3.05L3.5205 5.841C3.54694 5.92311 3.56511 6.00345 3.575 6.082C3.58478 6.16067 3.58967 6.24444 3.58967 6.33333C3.58967 6.42222 3.58478 6.506 3.575 6.58467C3.56511 6.66322 3.54694 6.74356 3.5205 6.82567L8.2615 9.61667C8.42217 9.45 8.61172 9.31839 8.83017 9.22183C9.0485 9.12528 9.28461 9.077 9.5385 9.077C10.0371 9.077 10.4608 9.25161 10.8098 9.60083C11.1588 9.95017 11.3333 10.3743 11.3333 10.8733C11.3333 11.3723 11.1587 11.7959 10.8093 12.1442C10.4601 12.4925 10.036 12.6667 9.537 12.6667Z"
+                              fill="#404040"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <button class="post-action-btn" aria-label="외부 링크">
+                        <span aria-hidden="true">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3334 5.36925L4.05388 12.6487C3.96154 12.7411 3.84554 12.7883 3.70588 12.7904C3.5661 12.7925 3.44793 12.7453 3.35138 12.6487C3.25482 12.5522 3.20654 12.4351 3.20654 12.2976C3.20654 12.1599 3.25482 12.0428 3.35138 11.9462L10.6309 4.66675H6.50004C6.35838 4.66675 6.2396 4.6188 6.14371 4.52291C6.04793 4.42703 6.00004 4.30825 6.00004 4.16658C6.00004 4.0248 6.04793 3.90608 6.14371 3.81041C6.2396 3.71464 6.35838 3.66675 6.50004 3.66675H11.7307C11.9015 3.66675 12.0446 3.72453 12.16 3.84008C12.2756 3.95553 12.3334 4.09864 12.3334 4.26941V9.50008C12.3334 9.64175 12.2854 9.76053 12.1895 9.85641C12.0937 9.95219 11.9749 10.0001 11.8332 10.0001C11.6914 10.0001 11.5727 9.95219 11.477 9.85641C11.3813 9.76053 11.3334 9.64175 11.3334 9.50008V5.36925Z"
+                              fill="#404040"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="post-row">
+                <a href="#" class="post-row-thumb" aria-label="게시글 열기">
+                  <span class="post-row-img" aria-hidden="true">
+                    <img src="./assets/sample-image-02.jpg" alt="교대황반변성 시야 한가운데가 안정되지 않는 느낌" />
+                  </span>
+                </a>
+                <div class="post-row-body">
+                  <div class="post-row-label">의료진 스토리</div>
+                  <h2 class="post-row-title">교대황반변성 시야 한가운데가 안정되지 않는 느낌</h2>
+                  <p class="post-row-desc">
+                    모든 국민은 양심의 자유를 가진다. 이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에
+                    속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를
+                    행한다.
+                  </p>
+                  <div class="post-row-info">
+                    <div class="post-row-author">
+                      <span class="post-row-author-img" aria-hidden="true">
+                        <img src="./assets/logo-small.svg" alt="더원서울안과" />
+                      </span>
+                      <div>
+                        <p class="post-row-author-name">더원서울안과</p>
+                        <p class="post-row-date">2026년 1월 8일</p>
+                      </div>
+                    </div>
+                    <div class="post-row-actions">
+                      <button class="post-action-btn" aria-label="공유">
+                        <span aria-hidden="true">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="13"
+                            viewBox="0 0 12 13"
+                            fill="none"
+                          >
+                            <path
+                              d="M9.537 12.6667C9.038 12.6667 8.61433 12.4922 8.266 12.1432C7.91778 11.7942 7.74367 11.3704 7.74367 10.8718C7.74367 10.8052 7.76672 10.6432 7.81283 10.3858L3.07183 7.59483C2.91117 7.7615 2.72028 7.89206 2.49917 7.9865C2.27806 8.08095 2.04117 8.12817 1.7885 8.12817C1.29172 8.12817 0.869444 7.95294 0.521667 7.6025C0.173889 7.25206 0 6.829 0 6.33333C0 5.83767 0.173889 5.41461 0.521667 5.06417C0.869444 4.71372 1.29172 4.5385 1.7885 4.5385C2.04117 4.5385 2.27806 4.58572 2.49917 4.68017C2.72028 4.77461 2.91117 4.90517 3.07183 5.07183L7.81283 2.28717C7.78639 2.20517 7.76822 2.12483 7.75833 2.04617C7.74856 1.9675 7.74367 1.88372 7.74367 1.79483C7.74367 1.29628 7.91828 0.8725 8.2675 0.5235C8.61683 0.1745 9.041 0 9.54 0C10.039 0 10.4626 0.174667 10.8108 0.524C11.1592 0.873222 11.3333 1.29733 11.3333 1.79633C11.3333 2.29533 11.1588 2.719 10.8098 3.06733C10.4608 3.41556 10.0371 3.58967 9.5385 3.58967C9.28461 3.58967 9.0485 3.54139 8.83017 3.44483C8.61172 3.34828 8.42217 3.21667 8.2615 3.05L3.5205 5.841C3.54694 5.92311 3.56511 6.00345 3.575 6.082C3.58478 6.16067 3.58967 6.24444 3.58967 6.33333C3.58967 6.42222 3.58478 6.506 3.575 6.58467C3.56511 6.66322 3.54694 6.74356 3.5205 6.82567L8.2615 9.61667C8.42217 9.45 8.61172 9.31839 8.83017 9.22183C9.0485 9.12528 9.28461 9.077 9.5385 9.077C10.0371 9.077 10.4608 9.25161 10.8098 9.60083C11.1588 9.95017 11.3333 10.3743 11.3333 10.8733C11.3333 11.3723 11.1587 11.7959 10.8093 12.1442C10.4601 12.4925 10.036 12.6667 9.537 12.6667Z"
+                              fill="#404040"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <button class="post-action-btn" aria-label="외부 링크">
+                        <span aria-hidden="true">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3334 5.36925L4.05388 12.6487C3.96154 12.7411 3.84554 12.7883 3.70588 12.7904C3.5661 12.7925 3.44793 12.7453 3.35138 12.6487C3.25482 12.5522 3.20654 12.4351 3.20654 12.2976C3.20654 12.1599 3.25482 12.0428 3.35138 11.9462L10.6309 4.66675H6.50004C6.35838 4.66675 6.2396 4.6188 6.14371 4.52291C6.04793 4.42703 6.00004 4.30825 6.00004 4.16658C6.00004 4.0248 6.04793 3.90608 6.14371 3.81041C6.2396 3.71464 6.35838 3.66675 6.50004 3.66675H11.7307C11.9015 3.66675 12.0446 3.72453 12.16 3.84008C12.2756 3.95553 12.3334 4.09864 12.3334 4.26941V9.50008C12.3334 9.64175 12.2854 9.76053 12.1895 9.85641C12.0937 9.95219 11.9749 10.0001 11.8332 10.0001C11.6914 10.0001 11.5727 9.95219 11.477 9.85641C11.3813 9.76053 11.3334 9.64175 11.3334 9.50008V5.36925Z"
+                              fill="#404040"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="post-row">
+                <a href="#" class="post-row-thumb" aria-label="게시글 열기">
+                  <span class="post-row-img" aria-hidden="true">
+                    <img src="./assets/sample-image-03.jpg" alt="교대황반변성 시야 한가운데가 안정되지 않는 느낌" />
+                  </span>
+                </a>
+                <div class="post-row-body">
+                  <div class="post-row-label">의료진 스토리</div>
+                  <h2 class="post-row-title">교대황반변성 시야 한가운데가 안정되지 않는 느낌</h2>
+                  <p class="post-row-desc">
+                    모든 국민은 양심의 자유를 가진다. 이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에
+                    속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를
+                    행한다.
+                  </p>
+                  <div class="post-row-info">
+                    <div class="post-row-author">
+                      <span class="post-row-author-img" aria-hidden="true">
+                        <img src="./assets/logo-small.svg" alt="더원서울안과" />
+                      </span>
+                      <div>
+                        <p class="post-row-author-name">더원서울안과</p>
+                        <p class="post-row-date">2026년 1월 8일</p>
+                      </div>
+                    </div>
+                    <div class="post-row-actions">
+                      <button class="post-action-btn" aria-label="공유">
+                        <span aria-hidden="true">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="13"
+                            viewBox="0 0 12 13"
+                            fill="none"
+                          >
+                            <path
+                              d="M9.537 12.6667C9.038 12.6667 8.61433 12.4922 8.266 12.1432C7.91778 11.7942 7.74367 11.3704 7.74367 10.8718C7.74367 10.8052 7.76672 10.6432 7.81283 10.3858L3.07183 7.59483C2.91117 7.7615 2.72028 7.89206 2.49917 7.9865C2.27806 8.08095 2.04117 8.12817 1.7885 8.12817C1.29172 8.12817 0.869444 7.95294 0.521667 7.6025C0.173889 7.25206 0 6.829 0 6.33333C0 5.83767 0.173889 5.41461 0.521667 5.06417C0.869444 4.71372 1.29172 4.5385 1.7885 4.5385C2.04117 4.5385 2.27806 4.58572 2.49917 4.68017C2.72028 4.77461 2.91117 4.90517 3.07183 5.07183L7.81283 2.28717C7.78639 2.20517 7.76822 2.12483 7.75833 2.04617C7.74856 1.9675 7.74367 1.88372 7.74367 1.79483C7.74367 1.29628 7.91828 0.8725 8.2675 0.5235C8.61683 0.1745 9.041 0 9.54 0C10.039 0 10.4626 0.174667 10.8108 0.524C11.1592 0.873222 11.3333 1.29733 11.3333 1.79633C11.3333 2.29533 11.1588 2.719 10.8098 3.06733C10.4608 3.41556 10.0371 3.58967 9.5385 3.58967C9.28461 3.58967 9.0485 3.54139 8.83017 3.44483C8.61172 3.34828 8.42217 3.21667 8.2615 3.05L3.5205 5.841C3.54694 5.92311 3.56511 6.00345 3.575 6.082C3.58478 6.16067 3.58967 6.24444 3.58967 6.33333C3.58967 6.42222 3.58478 6.506 3.575 6.58467C3.56511 6.66322 3.54694 6.74356 3.5205 6.82567L8.2615 9.61667C8.42217 9.45 8.61172 9.31839 8.83017 9.22183C9.0485 9.12528 9.28461 9.077 9.5385 9.077C10.0371 9.077 10.4608 9.25161 10.8098 9.60083C11.1588 9.95017 11.3333 10.3743 11.3333 10.8733C11.3333 11.3723 11.1587 11.7959 10.8093 12.1442C10.4601 12.4925 10.036 12.6667 9.537 12.6667Z"
+                              fill="#404040"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <button class="post-action-btn" aria-label="외부 링크">
+                        <span aria-hidden="true">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3334 5.36925L4.05388 12.6487C3.96154 12.7411 3.84554 12.7883 3.70588 12.7904C3.5661 12.7925 3.44793 12.7453 3.35138 12.6487C3.25482 12.5522 3.20654 12.4351 3.20654 12.2976C3.20654 12.1599 3.25482 12.0428 3.35138 11.9462L10.6309 4.66675H6.50004C6.35838 4.66675 6.2396 4.6188 6.14371 4.52291C6.04793 4.42703 6.00004 4.30825 6.00004 4.16658C6.00004 4.0248 6.04793 3.90608 6.14371 3.81041C6.2396 3.71464 6.35838 3.66675 6.50004 3.66675H11.7307C11.9015 3.66675 12.0446 3.72453 12.16 3.84008C12.2756 3.95553 12.3334 4.09864 12.3334 4.26941V9.50008C12.3334 9.64175 12.2854 9.76053 12.1895 9.85641C12.0937 9.95219 11.9749 10.0001 11.8332 10.0001C11.6914 10.0001 11.5727 9.95219 11.477 9.85641C11.3813 9.76053 11.3334 9.64175 11.3334 9.50008V5.36925Z"
+                              fill="#404040"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="post-row">
+                <a href="#" class="post-row-thumb" aria-label="게시글 열기">
+                  <span class="post-row-img" aria-hidden="true">
+                    <img src="./assets/sample-image-04.jpg" alt="교대황반변성 시야 한가운데가 안정되지 않는 느낌" />
+                  </span>
+                </a>
+                <div class="post-row-body">
+                  <div class="post-row-label">의료진 스토리</div>
+                  <h2 class="post-row-title">교대황반변성 시야 한가운데가 안정되지 않는 느낌</h2>
+                  <p class="post-row-desc">
+                    모든 국민은 양심의 자유를 가진다. 이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에
+                    속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를
+                    행한다.
+                  </p>
+                  <div class="post-row-info">
+                    <div class="post-row-author">
+                      <span class="post-row-author-img" aria-hidden="true">
+                        <img src="./assets/logo-small.svg" alt="더원서울안과" />
+                      </span>
+                      <div>
+                        <p class="post-row-author-name">더원서울안과</p>
+                        <p class="post-row-date">2026년 1월 8일</p>
+                      </div>
+                    </div>
+                    <div class="post-row-actions">
+                      <button class="post-action-btn" aria-label="공유">
+                        <span aria-hidden="true">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="13"
+                            viewBox="0 0 12 13"
+                            fill="none"
+                          >
+                            <path
+                              d="M9.537 12.6667C9.038 12.6667 8.61433 12.4922 8.266 12.1432C7.91778 11.7942 7.74367 11.3704 7.74367 10.8718C7.74367 10.8052 7.76672 10.6432 7.81283 10.3858L3.07183 7.59483C2.91117 7.7615 2.72028 7.89206 2.49917 7.9865C2.27806 8.08095 2.04117 8.12817 1.7885 8.12817C1.29172 8.12817 0.869444 7.95294 0.521667 7.6025C0.173889 7.25206 0 6.829 0 6.33333C0 5.83767 0.173889 5.41461 0.521667 5.06417C0.869444 4.71372 1.29172 4.5385 1.7885 4.5385C2.04117 4.5385 2.27806 4.58572 2.49917 4.68017C2.72028 4.77461 2.91117 4.90517 3.07183 5.07183L7.81283 2.28717C7.78639 2.20517 7.76822 2.12483 7.75833 2.04617C7.74856 1.9675 7.74367 1.88372 7.74367 1.79483C7.74367 1.29628 7.91828 0.8725 8.2675 0.5235C8.61683 0.1745 9.041 0 9.54 0C10.039 0 10.4626 0.174667 10.8108 0.524C11.1592 0.873222 11.3333 1.29733 11.3333 1.79633C11.3333 2.29533 11.1588 2.719 10.8098 3.06733C10.4608 3.41556 10.0371 3.58967 9.5385 3.58967C9.28461 3.58967 9.0485 3.54139 8.83017 3.44483C8.61172 3.34828 8.42217 3.21667 8.2615 3.05L3.5205 5.841C3.54694 5.92311 3.56511 6.00345 3.575 6.082C3.58478 6.16067 3.58967 6.24444 3.58967 6.33333C3.58967 6.42222 3.58478 6.506 3.575 6.58467C3.56511 6.66322 3.54694 6.74356 3.5205 6.82567L8.2615 9.61667C8.42217 9.45 8.61172 9.31839 8.83017 9.22183C9.0485 9.12528 9.28461 9.077 9.5385 9.077C10.0371 9.077 10.4608 9.25161 10.8098 9.60083C11.1588 9.95017 11.3333 10.3743 11.3333 10.8733C11.3333 11.3723 11.1587 11.7959 10.8093 12.1442C10.4601 12.4925 10.036 12.6667 9.537 12.6667Z"
+                              fill="#404040"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <button class="post-action-btn" aria-label="외부 링크">
+                        <span aria-hidden="true">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3334 5.36925L4.05388 12.6487C3.96154 12.7411 3.84554 12.7883 3.70588 12.7904C3.5661 12.7925 3.44793 12.7453 3.35138 12.6487C3.25482 12.5522 3.20654 12.4351 3.20654 12.2976C3.20654 12.1599 3.25482 12.0428 3.35138 11.9462L10.6309 4.66675H6.50004C6.35838 4.66675 6.2396 4.6188 6.14371 4.52291C6.04793 4.42703 6.00004 4.30825 6.00004 4.16658C6.00004 4.0248 6.04793 3.90608 6.14371 3.81041C6.2396 3.71464 6.35838 3.66675 6.50004 3.66675H11.7307C11.9015 3.66675 12.0446 3.72453 12.16 3.84008C12.2756 3.95553 12.3334 4.09864 12.3334 4.26941V9.50008C12.3334 9.64175 12.2854 9.76053 12.1895 9.85641C12.0937 9.95219 11.9749 10.0001 11.8332 10.0001C11.6914 10.0001 11.5727 9.95219 11.477 9.85641C11.3813 9.76053 11.3334 9.64175 11.3334 9.50008V5.36925Z"
+                              fill="#404040"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="post-row">
+                <a href="#none" class="post-row-thumb" aria-label="게시글 열기">
+                  <span class="post-row-img" aria-hidden="true">
+                    <img src="./assets/sample-image-05.jpg" alt="교대황반변성 시야 한가운데가 안정되지 않는 느낌" />
+                  </span>
+                </a>
+                <div class="post-row-body">
+                  <div class="post-row-label">의료진 스토리11</div>
+                  <h2 class="post-row-title">교대황반변성 시야 한가운데가 안정되지 않는 느낌</h2>
+                  <p class="post-row-desc">
+                    모든 국민은 양심의 자유를 가진다. 이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에
+                    속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를
+                    행한다.
+                  </p>
+                  <div class="post-row-info">
+                    <div class="post-row-author">
+                      <span class="post-row-author-img" aria-hidden="true">
+                        <img src="./assets/logo-small.svg" alt="더원서울안과" />
+                      </span>
+                      <div>
+                        <p class="post-row-author-name">더원서울안과</p>
+                        <p class="post-row-date">2026년 1월 8일</p>
+                      </div>
+                    </div>
+                    <div class="post-row-actions">
+                      <button class="post-action-btn" aria-label="공유">
+                        <span aria-hidden="true">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="13"
+                            viewBox="0 0 12 13"
+                            fill="none"
+                          >
+                            <path
+                              d="M9.537 12.6667C9.038 12.6667 8.61433 12.4922 8.266 12.1432C7.91778 11.7942 7.74367 11.3704 7.74367 10.8718C7.74367 10.8052 7.76672 10.6432 7.81283 10.3858L3.07183 7.59483C2.91117 7.7615 2.72028 7.89206 2.49917 7.9865C2.27806 8.08095 2.04117 8.12817 1.7885 8.12817C1.29172 8.12817 0.869444 7.95294 0.521667 7.6025C0.173889 7.25206 0 6.829 0 6.33333C0 5.83767 0.173889 5.41461 0.521667 5.06417C0.869444 4.71372 1.29172 4.5385 1.7885 4.5385C2.04117 4.5385 2.27806 4.58572 2.49917 4.68017C2.72028 4.77461 2.91117 4.90517 3.07183 5.07183L7.81283 2.28717C7.78639 2.20517 7.76822 2.12483 7.75833 2.04617C7.74856 1.9675 7.74367 1.88372 7.74367 1.79483C7.74367 1.29628 7.91828 0.8725 8.2675 0.5235C8.61683 0.1745 9.041 0 9.54 0C10.039 0 10.4626 0.174667 10.8108 0.524C11.1592 0.873222 11.3333 1.29733 11.3333 1.79633C11.3333 2.29533 11.1588 2.719 10.8098 3.06733C10.4608 3.41556 10.0371 3.58967 9.5385 3.58967C9.28461 3.58967 9.0485 3.54139 8.83017 3.44483C8.61172 3.34828 8.42217 3.21667 8.2615 3.05L3.5205 5.841C3.54694 5.92311 3.56511 6.00345 3.575 6.082C3.58478 6.16067 3.58967 6.24444 3.58967 6.33333C3.58967 6.42222 3.58478 6.506 3.575 6.58467C3.56511 6.66322 3.54694 6.74356 3.5205 6.82567L8.2615 9.61667C8.42217 9.45 8.61172 9.31839 8.83017 9.22183C9.0485 9.12528 9.28461 9.077 9.5385 9.077C10.0371 9.077 10.4608 9.25161 10.8098 9.60083C11.1588 9.95017 11.3333 10.3743 11.3333 10.8733C11.3333 11.3723 11.1587 11.7959 10.8093 12.1442C10.4601 12.4925 10.036 12.6667 9.537 12.6667Z"
+                              fill="#404040"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <button onclick="location.href='#none'" class="post-action-btn" aria-label="게시글 링크">
+                        <span aria-hidden="true">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3334 5.36925L4.05388 12.6487C3.96154 12.7411 3.84554 12.7883 3.70588 12.7904C3.5661 12.7925 3.44793 12.7453 3.35138 12.6487C3.25482 12.5522 3.20654 12.4351 3.20654 12.2976C3.20654 12.1599 3.25482 12.0428 3.35138 11.9462L10.6309 4.66675H6.50004C6.35838 4.66675 6.2396 4.6188 6.14371 4.52291C6.04793 4.42703 6.00004 4.30825 6.00004 4.16658C6.00004 4.0248 6.04793 3.90608 6.14371 3.81041C6.2396 3.71464 6.35838 3.66675 6.50004 3.66675H11.7307C11.9015 3.66675 12.0446 3.72453 12.16 3.84008C12.2756 3.95553 12.3334 4.09864 12.3334 4.26941V9.50008C12.3334 9.64175 12.2854 9.76053 12.1895 9.85641C12.0937 9.95219 11.9749 10.0001 11.8332 10.0001C11.6914 10.0001 11.5727 9.95219 11.477 9.85641C11.3813 9.76053 11.3334 9.64175 11.3334 9.50008V5.36925Z"
+                              fill="#404040"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <nav class="pagination" aria-label="페이지 이동">
+              <a class="page-num is-active" href="#">1</a>
+              <a class="page-num" href="#">2</a>
+              <a class="page-num" href="#">3</a>
+              <a class="page-num" href="#">4</a>
+              <a class="page-num" href="#">5</a>
+              <a class="page-num" href="#">6</a>
+              <button class="page-btn" aria-label="다음 페이지">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M6 2L14 10L6 18" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </button>
+              <button class="page-btn" aria-label="마지막 페이지">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M3 2L11 10L3 18" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+                  <path d="M9 2L17 10L9 18" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </button>
+            </nav>
+          </div>
+
+          <!-- 오른쪽 사이드 -->
+          <aside class="basic-list sticky-area" aria-label="사이드 영역">
+            <section class="side-card">
+              <div class="side-card-head">
+                <span class="badge-blue small">실시간 인기글 🔥</span>
+              </div>
+              <ul class="basic-list-items">
+                <li class="basic-list-item">
+                  <a href="#none" aria-hidden="true">
+                    <div class="basic-list-no">01</div>
+                    <div class="basic-list-body">
+                      <p class="basic-list-link">논현망막전막 시야 왜곡이 나타나는 망막 구조</p>
+                      <span class="basic-list-meta">2026년 1월 8일</span>
+                    </div>
+                    <div class="basic-list-thumb" aria-hidden="true">
+                      <div class="image-box">
+                        <img src="./assets/hero-list-sample-01.png" alt="논현망막전막 시야 왜곡이 나타나는 망막 구조" />
+                      </div>
+                      <div class="ico-box">
+                        <i class="ico img"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="basic-list-item">
+                  <a href="#none" aria-hidden="true">
+                    <div class="basic-list-no">02</div>
+                    <div class="basic-list-body">
+                      <p class="basic-list-link">잠실망막박리 망막 분리 시 나타나는 시각적 변화</p>
+                      <span class="basic-list-meta">2026년 1월 7일</span>
+                    </div>
+                    <div class="basic-list-thumb" aria-hidden="true">
+                      <div class="image-box">
+                        <img src="./assets/hero-list-sample-02.png" alt="논현망막전막 시야 왜곡이 나타나는 망막 구조" />
+                      </div>
+                      <div class="ico-box">
+                        <i class="ico video"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="basic-list-item">
+                  <a href="#none" aria-hidden="true">
+                    <div class="basic-list-no">03</div>
+                    <div class="basic-list-body">
+                      <p class="basic-list-link">
+                        삼성황반변성 중심부 인식이 흐려지는 시각 특징 삼성황반변성 중심부 인식이 흐려지는 시각 특징
+                        삼성황반변성 중심부 인식이 흐려지는 시각 특징 삼성황반변성 중심부 인식이 흐려지는 시각 특징
+                        삼성황반변성 중심부 인식이 흐려지는 시각 특징
+                      </p>
+                      <p class="basic-list-meta">2026년 1월 6일</p>
+                    </div>
+                    <div class="basic-list-thumb" aria-hidden="true">
+                      <div class="image-box">
+                        <img src="./assets/hero-list-sample-03.png" alt="논현망막전막 시야 왜곡이 나타나는 망막 구조" />
+                      </div>
+                      <div class="ico-box">
+                        <i class="ico img"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="container footer-inner">
+          <div class="footer-info">
+            <div class="footer-logo" aria-hidden="true">
+              <img src="./assets/logo-wh.svg" alt="더원서울안과 로고" />
+            </div>
+            <div class="footer-text-group">
+              <div>
+                <p class="footer-text">더원서울안과의원</p>
+                <p class="footer-text">대표 허장원</p>
+                <p class="footer-text">주소 서울특별시 강남구 강남대로652(신사동504-11) 신사스퀘어 8, 9층</p>
+              </div>
+              <div>
+                <p class="footer-text">대표전화 02-585-0202</p>
+                <p class="footer-text">사업자번호 468-93-01492</p>
+                <p class="footer-text">개인정보처리관리자 허장원 원장 02-585-0202</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-latest">
+            <div class="footer-swiper-container">
+              <button class="footer-swiper-button footer-swiper-button-prev" aria-label="이전 슬라이드">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                  <path
+                    d="M9.49825 19C10.8123 19 12.0473 18.7507 13.2035 18.252C14.3597 17.7533 15.3653 17.0766 16.2205 16.2218C17.0757 15.3669 17.7528 14.3617 18.2518 13.206C18.7506 12.0503 19 10.8156 19 9.50175C19 8.18775 18.7507 6.95267 18.252 5.7965C17.7533 4.64033 17.0766 3.63467 16.2217 2.7795C15.3669 1.92433 14.3617 1.24725 13.206 0.74825C12.0503 0.249417 10.8156 0 9.50175 0C8.18775 0 6.95267 0.249333 5.7965 0.748C4.64033 1.24667 3.63467 1.92342 2.7795 2.77825C1.92433 3.63308 1.24725 4.63833 0.748249 5.794C0.249416 6.94967 0 8.18442 0 9.49825C0 10.8123 0.249332 12.0473 0.747999 13.2035C1.24667 14.3597 1.92342 15.3653 2.77825 16.2205C3.63308 17.0757 4.63833 17.7528 5.794 18.2518C6.94967 18.7506 8.18442 19 9.49825 19ZM8.69425 10.25L10.027 11.5828C10.1653 11.7213 10.2329 11.8937 10.2297 12.1C10.2266 12.3063 10.1558 12.4788 10.0173 12.6173C9.87875 12.7558 9.70417 12.825 9.4935 12.825C9.28283 12.825 9.10933 12.7558 8.973 12.6173L6.4885 10.1328C6.30767 9.95192 6.21725 9.741 6.21725 9.5C6.21725 9.259 6.30767 9.04808 6.4885 8.86725L8.98275 6.373C9.12125 6.23467 9.29367 6.1655 9.5 6.1655C9.70633 6.1655 9.87875 6.23467 10.0173 6.373C10.1558 6.5115 10.225 6.68608 10.225 6.89675C10.225 7.10742 10.1558 7.28092 10.0173 7.41725L8.69425 8.75H12.5C12.7125 8.75 12.8906 8.82192 13.0342 8.96575C13.1781 9.10958 13.25 9.28775 13.25 9.50025C13.25 9.71292 13.1781 9.891 13.0342 10.0345C12.8906 10.1782 12.7125 10.25 12.5 10.25H8.69425Z"
+                    fill="white"
+                    fill-opacity="0.2"
+                  />
+                </svg>
+              </button>
+              <div class="swiper footer-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="footer-swiper-item">
+                      <div class="basic-list-no">01</div>
+                      <div class="basic-list-body">
+                        <a href="#" class="basic-list-link"
+                          >논현망막전막 시야 왜곡이 나타나는 망막 구조 논현망막전막 시야 왜곡이 나타나는 망막 구조</a
+                        >
+                        <p class="basic-list-meta">2026년 1월 8일</p>
+                      </div>
+                      <div class="basic-list-thumb" aria-hidden="true">
+                        <div class="image-box">
+                          <img
+                            src="./assets/hero-list-sample-01.png"
+                            alt="논현망막전막 시야 왜곡이 나타나는 망막 구조"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="footer-swiper-item">
+                      <div class="basic-list-no">02</div>
+                      <div class="basic-list-body">
+                        <a href="#" class="basic-list-link">논현망막전막 시야 왜곡이 나타나는 망막 구조</a>
+                        <p class="basic-list-meta">2026년 1월 8일</p>
+                      </div>
+                      <div class="basic-list-thumb" aria-hidden="true">
+                        <div class="image-box">
+                          <img
+                            src="./assets/hero-list-sample-01.png"
+                            alt="논현망막전막 시야 왜곡이 나타나는 망막 구조"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="footer-swiper-button footer-swiper-button-next" aria-label="다음 슬라이드">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12.0017 21.5C10.6877 21.5 9.45267 21.2507 8.2965 20.752C7.14033 20.2533 6.13467 19.5766 5.2795 18.7218C4.42433 17.8669 3.74725 16.8617 3.24825 15.706C2.74942 14.5503 2.5 13.3156 2.5 12.0017C2.5 10.6877 2.74933 9.45267 3.248 8.2965C3.74667 7.14033 4.42342 6.13467 5.27825 5.2795C6.13308 4.42433 7.13833 3.74725 8.294 3.24825C9.44967 2.74942 10.6844 2.5 11.9983 2.5C13.3123 2.5 14.5473 2.74933 15.7035 3.248C16.8597 3.74667 17.8653 4.42342 18.7205 5.27825C19.5757 6.13308 20.2528 7.13833 20.7518 8.294C21.2506 9.44967 21.5 10.6844 21.5 11.9983C21.5 13.3123 21.2507 14.5473 20.752 15.7035C20.2533 16.8597 19.5766 17.8653 18.7218 18.7205C17.8669 19.5757 16.8617 20.2528 15.706 20.7518C14.5503 21.2506 13.3156 21.5 12.0017 21.5ZM12.8057 12.75L11.473 14.0828C11.3347 14.2213 11.2671 14.3937 11.2703 14.6C11.2734 14.8063 11.3442 14.9788 11.4827 15.1173C11.6213 15.2558 11.7958 15.325 12.0065 15.325C12.2172 15.325 12.3907 15.2558 12.527 15.1173L15.0115 12.6328C15.1923 12.4519 15.2828 12.241 15.2828 12C15.2828 11.759 15.1923 11.5481 15.0115 11.3673L12.5173 8.873C12.3787 8.73467 12.2063 8.6655 12 8.6655C11.7937 8.6655 11.6213 8.73467 11.4827 8.873C11.3442 9.0115 11.275 9.18608 11.275 9.39675C11.275 9.60742 11.3442 9.78092 11.4827 9.91725L12.8057 11.25H9C8.7875 11.25 8.60942 11.3219 8.46575 11.4658C8.32192 11.6096 8.25 11.7878 8.25 12.0003C8.25 12.2129 8.32192 12.391 8.46575 12.5345C8.60942 12.6782 8.7875 12.75 9 12.75H12.8057Z"
+                    fill="white"
+                    fill-opacity="0.2"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p class="footer-copy">ⓒ THE ONE SEOUL EYE CLINIC. ALL RIGHTS RESERVED.</p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-btn home" aria-label="홈페이지">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
+                <path
+                  d="M0 15.5V6.5C0 6.18333 0.0708333 5.88333 0.2125 5.6C0.354167 5.31667 0.55 5.08333 0.8 4.9L6.8 0.4C7.15 0.133333 7.55 0 8 0C8.45 0 8.85 0.133333 9.2 0.4L15.2 4.9C15.45 5.08333 15.6458 5.31667 15.7875 5.6C15.9292 5.88333 16 6.18333 16 6.5V15.5C16 16.05 15.8042 16.5208 15.4125 16.9125C15.0208 17.3042 14.55 17.5 14 17.5H11C10.7167 17.5 10.4792 17.4042 10.2875 17.2125C10.0958 17.0208 10 16.7833 10 16.5V11.5C10 11.2167 9.90417 10.9792 9.7125 10.7875C9.52083 10.5958 9.28333 10.5 9 10.5H7C6.71667 10.5 6.47917 10.5958 6.2875 10.7875C6.09583 10.9792 6 11.2167 6 11.5V16.5C6 16.7833 5.90417 17.0208 5.7125 17.2125C5.52083 17.4042 5.28333 17.5 5 17.5H2C1.45 17.5 0.979167 17.3042 0.5875 16.9125C0.195833 16.5208 0 16.05 0 15.5Z"
+                  fill="white"
+                  fill-opacity="0.6"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-btn" aria-label="병원">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                <path
+                  d="M7.375 9.625V12.125C7.375 12.4375 7.48458 12.7031 7.70375 12.9218C7.92275 13.1406 8.18875 13.25 8.50175 13.25C8.81475 13.25 9.08017 13.1406 9.298 12.9218C9.516 12.7031 9.625 12.4375 9.625 12.125V9.625H12.125C12.4375 9.625 12.7031 9.51542 12.9218 9.29625C13.1406 9.07725 13.25 8.81125 13.25 8.49825C13.25 8.18525 13.1406 7.91983 12.9218 7.702C12.7031 7.484 12.4375 7.375 12.125 7.375H9.625V4.875C9.625 4.5625 9.51542 4.29692 9.29625 4.07825C9.07725 3.85942 8.81125 3.75 8.49825 3.75C8.18525 3.75 7.91983 3.85942 7.702 4.07825C7.484 4.29692 7.375 4.5625 7.375 4.875V7.375H4.875C4.5625 7.375 4.29692 7.48458 4.07825 7.70375C3.85942 7.92275 3.75 8.18875 3.75 8.50175C3.75 8.81475 3.85942 9.08017 4.07825 9.298C4.29692 9.516 4.5625 9.625 4.875 9.625H7.375ZM1.80775 17C1.30258 17 0.875 16.825 0.525 16.475C0.175 16.125 0 15.6974 0 15.1923V1.80775C0 1.30258 0.175 0.875 0.525 0.525C0.875 0.175 1.30258 0 1.80775 0H15.1923C15.6974 0 16.125 0.175 16.475 0.525C16.825 0.875 17 1.30258 17 1.80775V15.1923C17 15.6974 16.825 16.125 16.475 16.475C16.125 16.825 15.6974 17 15.1923 17H1.80775Z"
+                  fill="white"
+                  fill-opacity="0.6"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-btn" aria-label="TV">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M7.5 14.5L14.5 10L7.5 5.5V14.5ZM10 20C8.61667 20 7.31667 19.7375 6.1 19.2125C4.88333 18.6875 3.825 17.975 2.925 17.075C2.025 16.175 1.3125 15.1167 0.7875 13.9C0.2625 12.6833 0 11.3833 0 10C0 8.61667 0.2625 7.31667 0.7875 6.1C1.3125 4.88333 2.025 3.825 2.925 2.925C3.825 2.025 4.88333 1.3125 6.1 0.7875C7.31667 0.2625 8.61667 0 10 0C11.3833 0 12.6833 0.2625 13.9 0.7875C15.1167 1.3125 16.175 2.025 17.075 2.925C17.975 3.825 18.6875 4.88333 19.2125 6.1C19.7375 7.31667 20 8.61667 20 10C20 11.3833 19.7375 12.6833 19.2125 13.9C18.6875 15.1167 17.975 16.175 17.075 17.075C16.175 17.975 15.1167 18.6875 13.9 19.2125C12.6833 19.7375 11.3833 20 10 20Z"
+                  fill="white"
+                  fill-opacity="0.6"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-btn" aria-label="허심탄회">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M8 12L14 8L8 4V12ZM0 20V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H18C18.55 0 19.0208 0.195833 19.4125 0.5875C19.8042 0.979167 20 1.45 20 2V14C20 14.55 19.8042 15.0208 19.4125 15.4125C19.0208 15.8042 18.55 16 18 16H4L0 20Z"
+                  fill="white"
+                  fill-opacity="0.6"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // GNB 드롭다운 토글
+      document.querySelectorAll(".gnb-item").forEach((item) => {
+        const link = item.querySelector(".gnb-link");
+        const dropdown = item.querySelector(".gnb-dropdown");
+
+        // 드롭다운이 없는 메뉴는 이벤트를 건너뜀
+        if (!link || !dropdown) return;
+
+        link.addEventListener("mouseenter", () => {
+          dropdown.classList.add("open");
+        });
+
+        item.addEventListener("mouseleave", () => {
+          dropdown.classList.remove("open");
+        });
+      });
+
+      // post-row 전체 클릭 시 링크로 이동 (actions 영역은 제외)
+      document.querySelectorAll(".post-row").forEach((row) => {
+        const thumbLink = row.querySelector(".post-row-thumb");
+        if (!thumbLink) return;
+
+        const href = thumbLink.getAttribute("href");
+        if (!href) return;
+
+        row.addEventListener("click", (event) => {
+          const target = event.target;
+
+          // 공유/외부링크 버튼 영역 클릭은 무시
+          if (target.closest(".post-row-actions")) return;
+          // 이미 a 태그를 직접 클릭한 경우 기본 동작 유지
+          if (target.closest("a")) return;
+
+          window.location.href = href;
+        });
+
+        // 썸네일 a 클릭 시도 동일하게 동작 (기본 # 이동 방지)
+        thumbLink.addEventListener("click", (event) => {
+          event.preventDefault();
+          window.location.href = href;
+        });
+      });
+
+      // Footer Swiper 초기화
+      const footerSwiper = new Swiper(".footer-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".footer-swiper-button-next",
+          prevEl: ".footer-swiper-button-prev",
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

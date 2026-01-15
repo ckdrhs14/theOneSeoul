@@ -1,0 +1,131 @@
+/* basic-list */
+.basic-list {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+.basic-list-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  position: relative;
+}
+.basic-list-item {
+  display: grid;
+  grid-template-columns: 3.3rem 1fr 12rem;
+  gap: 4rem;
+  align-items: start;
+  padding: 1rem 0;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.basic-list-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.1rem;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(225, 225, 225, 1) 30%,
+    rgba(225, 225, 225, 1) 70%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.basic-list-item:last-child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.1rem;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(225, 225, 225, 1) 30%,
+    rgba(225, 225, 225, 1) 70%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+.basic-list-no {
+  font-weight: 700;
+  color: #d5d5d5;
+  font-size: 3.2rem;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  padding-top: 1rem;
+}
+.basic-list-body {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+.basic-list-link {
+  display: block;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #222;
+  letter-spacing: -0.08rem;
+}
+.basic-list-meta {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+.basic-list-thumb {
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+}
+.basic-list-thumb .image-box {
+  width: 100%;
+  height: 100%;
+  border-radius: 999.9rem;
+  background: #e5e7eb;
+  position: relative;
+  overflow: hidden;
+}
+.basic-list-thumb .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.basic-list-thumb .ico-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url("./assets/list-path.svg") center/contain no-repeat;
+  width: 5.9rem;
+  height: 5.8rem;
+}
+.basic-list-thumb .ico-box .ico {
+  display: block;
+  position: relative;
+}
+.basic-list-thumb .ico-box .ico.img {
+  width: 1.7rem;
+  height: 1.7rem;
+  background: url("./assets/ico-img.svg") center/contain no-repeat;
+  top: 1rem;
+  left: 3rem;
+}
+.basic-list-thumb .ico-box .ico.video {
+  width: 0.9rem;
+  height: 1.1rem;
+  background: url("./assets/ico-video.svg") center/contain no-repeat;
+  top: 1.4rem;
+  left: 3.6rem;
+}
