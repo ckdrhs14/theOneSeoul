@@ -958,6 +958,7 @@
 .share-box {
   position: relative;
   display: flex;
+  align-items: center;
 }
 .share-box .share-icon-box {
   display: flex;
@@ -970,9 +971,33 @@
   margin-left: 1rem;
 }
 .share-box .share-icon-box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 100%;
   opacity: 0;
   transform: translateX(-20px);
   transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.share-box .share-icon-box .share-icon-facebook {
+  background: #516EAB;
+}
+.share-box .share-icon-box .share-icon-twitter {
+  background: #29C5F6;
+}
+.share-box .share-icon-box .share-icon-instagram {
+  background: linear-gradient(218deg, #6749D1 12.28%, #E2239C 47.92%, #F7248A 65.74%, #FDD365 83.56%);
+}
+.share-box .share-icon-box .share-icon-kakao {
+  background: #F9E000;
+}
+.share-box .share-icon-box .share-icon-pinterest {
+  background: #CA212A;
+}
+.share-box .share-icon-box .share-icon-link {
+  background: #7BBF6A;
 }
 .share-box.active .share-icon-box {
   opacity: 1;
@@ -1435,6 +1460,9 @@
   :root {
     --header-inner: 6.8rem;
   }
+  ::-webkit-scrollbar {
+    display: none;
+  }
   .header {
     position: sticky;
     top: 0;
@@ -1514,6 +1542,16 @@
   }
   .flag-type::after {
     height: 3.2rem;
+  }
+  .share-box .share-icon-box a {
+    width: 2.6rem;
+    height: 2.6rem;
+    padding: 0.6rem;
+  }
+  .share-box .share-icon-box a svg {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
   .board-view .board-head {
     gap: 1.2rem;

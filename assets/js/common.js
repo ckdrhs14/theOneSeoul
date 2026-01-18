@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.addEventListener("click", () => {
         mobileMenu.classList.toggle("open");
         dimmed.classList.toggle("open");
+        document.body.classList.toggle("no-scroll");
       });
     });
 
@@ -30,12 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
       closeBtn.addEventListener("click", () => {
         mobileMenu.classList.remove("open");
         dimmed.classList.remove("open");
+        document.body.classList.remove("no-scroll");
       });
     }
 
     dimmed.addEventListener("click", () => {
       mobileMenu.classList.remove("open");
       dimmed.classList.remove("open");
+      document.body.classList.remove("no-scroll");
     });
   }
 
