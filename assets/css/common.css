@@ -114,7 +114,7 @@
   background: #fff;
   height: 100vh;
   z-index: 100;
-  padding-top: 4.7rem;
+  padding-top: 5.7rem;
   transition: right 0.6s ease;
 }
 .mobile-menu.open {
@@ -130,6 +130,7 @@
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.04rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .mobile-menu .menu-item {
   position: relative;
@@ -147,6 +148,13 @@
   width: 1.1rem;
   height: 0.7rem;
   transition: transform 0.2s ease-in-out;
+}
+.mobile-menu .menu-item.active > a {
+  background-color: var(--blue);
+  color: #fff;
+}
+.mobile-menu .menu-item.active > a::after {
+  background-image: url("/assets/img/ico-dropdown-arrow-wh.svg");
 }
 .mobile-menu .menu-item.active:has(.menu-dropdown) > a::after {
   transform: translateY(-50%) rotate(0);
@@ -174,7 +182,7 @@
 }
 .mobile-menu .close-btn {
   position: absolute;
-  top: 2rem;
+  top: 1.4rem;
   right: 2rem;
   width: 3.2rem;
   height: 3.2rem;
