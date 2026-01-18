@@ -531,7 +531,6 @@
   border-radius: 100%;
 }
 .post-row-author-img img {
-  background: url("/assets/img/logo-small.svg") lightgray 0px -3.037px/100% 109.318% no-repeat;
   mix-blend-mode: darken;
   height: 3.3rem;
 }
@@ -669,7 +668,7 @@
   }
   .hero-feature {
     height: auto;
-    aspect-ratio: 16/9;
+    aspect-ratio: 337.5/238.24;
   }
   .hero-feature-image img {
     -o-object-position: top;

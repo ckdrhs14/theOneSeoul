@@ -1505,7 +1505,6 @@
   }
   .basic-list-item > a {
     position: relative;
-    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0;
