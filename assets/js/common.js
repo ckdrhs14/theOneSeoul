@@ -16,68 +16,45 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.querySelectorAll(".mobile-menu-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      document.querySelector(".mobile-menu").classList.toggle("open");
-      document.querySelector(".dimmed").classList.toggle("open");
-    });
-    document.querySelector(".close-btn").addEventListener("click", () => {
-      document.querySelector(".mobile-menu").classList.remove("open");
-      document.querySelector(".dimmed").classList.remove("open");
-    });
-    document.querySelector(".dimmed").addEventListener("click", () => {
-      document.querySelector(".mobile-menu").classList.remove("open");
-      document.querySelector(".dimmed").classList.remove("open");
-    });
-  });
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const dimmed = document.querySelector(".mobile-menu-dimmed");
+  const closeBtn = document.querySelector(".close-btn");
 
-  // 모바일 메뉴 드롭다운 토글
-  document.querySelectorAll(".mobile-menu .menu-item").forEach((item) => {
-    const mobileMenuLink = item.querySelector("a");
-    const mobileMenuDropdown = item.querySelector(".menu-dropdown");
-
-    // 드롭다운이 없는 메뉴는 이벤트를 건너뜀
-    if (!mobileMenuLink || !mobileMenuDropdown) return;
-
-    mobileMenuLink.addEventListener("click", (event) => {
-      event.preventDefault();
-      const isActive = item.classList.contains("active");
-
-      // 다른 활성화된 메뉴 닫기
-      document.querySelectorAll(".mobile-menu .menu-item").forEach((otherItem) => {
-        if (otherItem !== item) {
-          otherItem.classList.remove("active");
-        }
+  // 요소들이 존재할 때만 이벤트 리스너 등록
+  if (mobileMenu && dimmed) {
+    document.querySelectorAll(".mobile-menu-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
+        dimmed.classList.toggle("open");
       });
-
-      // 현재 메뉴 토글
-      item.classList.toggle("active", !isActive);
     });
-  });
 
-  // post-row 전체 클릭 시 링크로 이동 (actions 영역은 제외)
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        dimmed.classList.remove("open");
+      });
+    }
+
+    dimmed.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+      dimmed.classList.remove("open");
+    });
+  }
+
+
+
   document.querySelectorAll(".post-row").forEach((row) => {
-    const thumbLink = row.querySelector(".post-row-thumb");
-    if (!thumbLink) return;
+    const postRowLink = row.querySelector("a");
+    if (!postRowLink) return;
 
-    const href = thumbLink.getAttribute("href");
-    if (!href) return;
-
-    row.addEventListener("click", (event) => {
+    postRowLink.addEventListener("click", (event) => {
       const target = event.target;
 
-      // 공유/외부링크 버튼 영역 클릭은 무시
-      if (target.closest(".post-row-actions")) return;
-      // 이미 a 태그를 직접 클릭한 경우 기본 동작 유지
-      if (target.closest("a")) return;
-
-      window.location.href = href;
-    });
-
-    // 썸네일 a 클릭 시도 동일하게 동작 (기본 # 이동 방지)
-    thumbLink.addEventListener("click", (event) => {
-      event.preventDefault();
-      window.location.href = href;
+      if (target.closest(".post-row-actions")) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
     });
   });
 
@@ -93,4 +70,127 @@ document.addEventListener("DOMContentLoaded", () => {
       loop: true,
     });
   }
+
+  if (window.location.hash) {
+    const hash = window.location.hash.substring(1);
+    const targetElement = document.getElementById(hash);
+
+    if (targetElement) {
+      setTimeout(() => {
+        const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
+        const targetPosition = targetElement.offsetTop - headerHeight - 20;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }, 100);
+    }
+  }
 });
+
+
+$(function () {
+  // 모바일 메뉴 드롭다운 토글
+  $(".mobile-menu .menu-item").on("click", "> a", function (e) {
+    e.preventDefault();
+    const $menuItem = $(this).parent(".menu-item");
+    const $dropdown = $menuItem.find(".menu-dropdown");
+
+    if ($dropdown.length === 0) return;
+
+    $(".mobile-menu .menu-item").not($menuItem).removeClass("active").find(".menu-dropdown").slideUp(400);
+
+    $menuItem.toggleClass("active");
+    $dropdown.slideToggle(400);
+  });
+
+  // 헤더 스크롤 이벤트
+  const $topBanner = $(".top-banner");
+  const hasTopBanner = $topBanner.length > 0;
+  const topBannerHeight = hasTopBanner ? $topBanner.outerHeight() : 0;
+
+
+  $(".header, .sticky-area").removeClass("scroll-down");
+  if ($(window).scrollTop() === 0) {
+    $(".header").removeClass("is-fixed");
+  }
+
+  let lastScrollTop = $(window).scrollTop();
+
+  $(window).on("scroll", function () {
+    const scrollTop = $(window).scrollTop();
+    const scrollDiff = scrollTop - lastScrollTop;
+    const scrollThreshold = hasTopBanner ? topBannerHeight : 0;
+
+    if (scrollTop > 0) {
+      $(".header").addClass("is-fixed");
+      $(".quick-menu").addClass("active");
+
+      if (scrollTop > scrollThreshold) {
+        if (scrollDiff > 0) {
+          $(".header, .sticky-area").addClass("scroll-down");
+        } else if (scrollDiff < 0) {
+          $(".header, .sticky-area").removeClass("scroll-down");
+        }
+      } else {
+        $(".header, .sticky-area").removeClass("scroll-down");
+      }
+    } else {
+      $(".header").removeClass("is-fixed");
+      $(".header, .sticky-area").removeClass("scroll-down");
+      $(".quick-menu").removeClass("active");
+    }
+
+    lastScrollTop = scrollTop;
+  });
+});
+
+
+function scrollToReplyArea() {
+  const replyArea = document.getElementById('reply-area');
+  if (replyArea) {
+    const targetPosition = replyArea.offsetTop - 20;
+
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+  }
+}
+
+function scrollTopMove() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+function shareOpen(element) {
+  if (!element) return;
+
+  // share-box 구조 (board.html)
+  const shareBox = element.closest('.share-box');
+  if (shareBox) {
+    shareBox.classList.toggle('active');
+    return;
+  }
+
+  // post-action-btn 구조 (index.html)
+  if (element.classList.contains('post-action-btn')) {
+    const postRowActions = element.closest('.post-row-actions');
+    if (postRowActions) {
+      postRowActions.classList.toggle('active');
+    }
+    return;
+  }
+
+  // post-action-btn 내부에서 호출된 경우
+  const postActionBtn = element.closest('.post-action-btn');
+  if (postActionBtn) {
+    const postRowActions = postActionBtn.closest('.post-row-actions');
+    if (postRowActions) {
+      postRowActions.classList.toggle('active');
+    }
+  }
+}

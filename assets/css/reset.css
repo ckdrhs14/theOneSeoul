@@ -17,7 +17,7 @@ body {
   font-family: "Pretendard", system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple SD Gothic Neo", "Malgun Gothic",
     sans-serif;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1;
   color: var(--text);
 }
 
@@ -140,6 +140,13 @@ textarea {
   padding: 0.8rem 1.6rem;
   font-size: 1.5rem;
   font-weight: 300;
+  transition: border-color 0.2s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #000;
+  }
 }
 
 input[type="text"]::placeholder,
@@ -162,7 +169,8 @@ textarea {
 
 /* Select 추가 스타일 */
 select::-ms-expand {
-  display: none; /* 화살표 없애기 for IE10, 11*/
+  display: none;
+  /* 화살표 없애기 for IE10, 11*/
 }
 
 /* Button 추가 스타일 */
@@ -199,10 +207,34 @@ legend {
   width: 1px;
 }
 
+
+
+::-webkit-scrollbar {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+  border: 4px solid #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+
 /* 반응형 */
 @media (max-width: 1024px) {
   :root {
     --radius-lg: 2rem;
     --radius-md: 1.6rem;
   }
+
+
 }
