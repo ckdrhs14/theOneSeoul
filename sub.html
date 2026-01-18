@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
   <title>더원서울안과 | 웹 블로그</title>
   <meta name="description" content="더원서울안과 웹 블로그" />
   <link rel="icon" href="./theone.ico" />
@@ -30,6 +30,16 @@
 <body>
   <a class="skip-link" href="#main">본문 바로가기</a>
   <div class="dimmed"></div>
+
+  <!-- 상단 배너 -->
+  <div class="top-banner">
+    <div class="top-banner-inner">
+      <a href="https://www.naver.com" target="_blank">
+        <img src="./assets/img/top-banner-01.png" class="pc-only" alt="탑배너" />
+        <img src="./assets/img/top-banner-01-mo.png" class="mobile-only" alt="탑배너" />
+      </a>
+    </div>
+  </div>
 
   <!-- 헤더 -->
   <header class="header">
@@ -104,6 +114,32 @@
           <li class="menu-item">
             <a href="sub.html">센터 소식</a>
           </li>
+          <li class="menu-item">
+            <a href="sub.html">세로 스크롤링 테스트</a>
+            <ul class="menu-dropdown">
+              <li><a href="sub.html">메뉴가 존재하고</a></li>
+              <li><a href="sub.html">메뉴가 모바일 디바이스 세로 높이 이상</a></li>
+              <li><a href="sub.html">스크롤링 지원 확인</a></li>
+              <li><a href="sub.html">메뉴가 존재하고</a></li>
+              <li><a href="sub.html">메뉴가 모바일 디바이스 세로 높이 이상</a></li>
+              <li><a href="sub.html">스크롤링 지원 확인</a></li>
+              <li><a href="sub.html">메뉴가 존재하고</a></li>
+              <li><a href="sub.html">메뉴가 모바일 디바이스 세로 높이 이상</a></li>
+              <li><a href="sub.html">스크롤링 지원 확인</a></li>
+              <li><a href="sub.html">메뉴가 존재하고</a></li>
+              <li><a href="sub.html">메뉴가 모바일 디바이스 세로 높이 이상</a></li>
+              <li><a href="sub.html">스크롤링 지원 확인</a></li>
+              <li><a href="sub.html">메뉴가 존재하고</a></li>
+              <li><a href="sub.html">메뉴가 모바일 디바이스 세로 높이 이상</a></li>
+              <li><a href="sub.html">스크롤링 지원 확인</a></li>
+              <li><a href="sub.html">메뉴가 존재하고</a></li>
+              <li><a href="sub.html">메뉴가 모바일 디바이스 세로 높이 이상</a></li>
+              <li><a href="sub.html">스크롤링 지원 확인</a></li>
+              <li><a href="sub.html">메뉴가 존재하고</a></li>
+              <li><a href="sub.html">메뉴가 모바일 디바이스 세로 높이 이상</a></li>
+              <li><a href="sub.html">스크롤링 지원 확인</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
       <div class="mobile-menu-dimmed"></div>
@@ -146,7 +182,8 @@
         <!-- 검색 영역 -->
         <div class="header-search">
           <div class="search-box">
-            <form id="subsearchFrm" name="subsearchFrm">
+            <form id="subsearchFrm" name="subsearchFrm" onsubmit="return false;">
+              <input type="search" class="search-input" placeholder="검색어를 입력하세요" />
               <button type="submit" class="search-submit-btn">
                 <span class="search-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -156,8 +193,6 @@
                   </svg>
                 </span>
               </button>
-
-              <input type="search" class="search-input" placeholder="검색어를 입력하세요" />
             </form>
           </div>
         </div>

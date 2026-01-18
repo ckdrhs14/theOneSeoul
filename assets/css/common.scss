@@ -16,6 +16,10 @@
   --gnb: 6rem;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .pc-only {
   display: block;
 }
@@ -121,6 +125,12 @@
   z-index: 100;
   padding-top: 5.7rem;
   transition: right 0.6s ease;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 
 
   &.open {
@@ -527,6 +537,14 @@
           }
         }
       }
+    }
+
+    input {
+      order: 2;
+    }
+
+    button {
+      order: 1;
     }
   }
 
@@ -1016,6 +1034,7 @@
   font-weight: 700;
   letter-spacing: -0.072rem;
   width: fit-content;
+  background-color: #fff;
 
   &.blue {
     color: #486eeb;
@@ -1212,7 +1231,7 @@
   .board-content {
     position: relative;
     padding-bottom: 4rem;
-    line-height: 1.6;
+    line-height: 1.4;
   }
 
 
@@ -1658,9 +1677,6 @@
     }
   }
 
-  .basic-list-no {
-    padding-top: 0.5rem;
-  }
 
   .flag-type {
     font-size: 2rem;
@@ -1836,8 +1852,12 @@
     }
   }
 
+  .basic-list-no {
+    padding-top: 0;
+  }
+
   .basic-list-body {
-    width: calc(100% - 16rem);
+    width: calc(100% - 12rem);
     gap: 1rem;
   }
 

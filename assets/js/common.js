@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // GNB 드롭다운 토글
   document.querySelectorAll(".gnb-item").forEach((item) => {
     const gnbLink = item.querySelector(".gnb-link");
     const gnbDropdown = item.querySelector(".gnb-dropdown");
 
-    // 드롭다운이 없는 메뉴는 이벤트를 건너뜀
     if (!gnbLink || !gnbDropdown) return;
 
     gnbLink.addEventListener("mouseenter", () => {
@@ -20,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const dimmed = document.querySelector(".mobile-menu-dimmed");
   const closeBtn = document.querySelector(".close-btn");
 
-  // 요소들이 존재할 때만 이벤트 리스너 등록
   if (mobileMenu && dimmed) {
     document.querySelectorAll(".mobile-menu-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -58,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Footer Swiper 초기화 (Swiper가 로드되었는지 확인)
   if (typeof Swiper !== "undefined") {
     const footerSwiper = new Swiper(".footer-swiper", {
       slidesPerView: 1,

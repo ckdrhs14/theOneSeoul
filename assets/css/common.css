@@ -15,6 +15,10 @@
   --gnb: 6rem;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .pc-only {
   display: block;
 }
@@ -116,6 +120,11 @@
   z-index: 100;
   padding-top: 5.7rem;
   transition: right 0.6s ease;
+  overflow-y: scroll;
+}
+.mobile-menu::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 .mobile-menu.open {
   right: 0;
@@ -455,6 +464,12 @@
 }
 .header-search .search-box:hover form .search-submit-btn svg path, .header-search .search-box:has(.search-input:focus) form .search-submit-btn svg path, .header-search .search-box:has(.search-input:active) form .search-submit-btn svg path {
   fill: var(--blue);
+}
+.header-search .search-box input {
+  order: 2;
+}
+.header-search .search-box button {
+  order: 1;
 }
 .header-search .search-input {
   width: 100%;
@@ -870,6 +885,7 @@
   letter-spacing: -0.072rem;
   width: -moz-fit-content;
   width: fit-content;
+  background-color: #fff;
 }
 .badge-type.blue {
   color: #486eeb;
@@ -1023,7 +1039,7 @@
 .board-view .board-content {
   position: relative;
   padding-bottom: 4rem;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 .board-view .next-prev-box .thumb-label {
   font-size: 1.6rem;
@@ -1394,9 +1410,6 @@
   .basic-list-item > a {
     gap: 3rem;
   }
-  .basic-list-no {
-    padding-top: 0.5rem;
-  }
   .flag-type {
     font-size: 2rem;
   }
@@ -1517,8 +1530,11 @@
     flex-direction: column;
     gap: 0;
   }
+  .basic-list-no {
+    padding-top: 0;
+  }
   .basic-list-body {
-    width: calc(100% - 16rem);
+    width: calc(100% - 12rem);
     gap: 1rem;
   }
   .basic-list-thumb {
