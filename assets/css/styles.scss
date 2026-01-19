@@ -460,8 +460,8 @@
   font-weight: 700;
   color: #404040;
   letter-spacing: -0.096rem;
-  line-height: 120%;
-  @include line-clamp(2);
+  line-height: 1.2;
+  @include line-clamp-with-height(2, 2.4rem);
 }
 
 .post-row-desc {
@@ -474,6 +474,7 @@
 
   p {
     @include line-clamp(2);
+    word-break: break-all;
   }
 }
 

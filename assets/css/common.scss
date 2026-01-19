@@ -428,12 +428,7 @@
   height: 6rem;
   line-height: 6rem;
   padding: 0 1.5rem;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
 
-  &:hover {
-    color: var(--blue);
-    text-shadow: 0rem 0rem 0rem var(--blue);
-  }
 
   &::before {
     display: block;
@@ -446,6 +441,9 @@
     transform: translateX(-50%);
     background: #26a9de;
     transition: width 0.3s ease-in-out;
+  }
+  &.is-active {
+    color:var(--blue);
   }
 
   &.is-active::before,
@@ -1313,6 +1311,16 @@
   }
 }
 
+.no-posts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
 .line {
   position: relative;
   width: 0.1rem;
@@ -1424,7 +1432,7 @@
       display: flex;
       justify-content: flex-end;
 
-      button {
+      a {
         padding: 0.4rem 1rem;
         border: 1px solid #e1e1e1;
         color: #474747;
@@ -1467,8 +1475,6 @@
     font-weight:300;
     color:var(--muted);
     padding:10rem 0;
-    border:1px solid #e1e1e1;
-    border-width:1px 0;
   }
 }
 
@@ -1567,7 +1573,7 @@
   font-weight: 700;
   line-height: 120%;
   color: #222;
-  @include line-clamp(2);
+  @include line-clamp-with-height(2, 2.4rem);
 }
 
 .basic-list-date {
@@ -2022,7 +2028,7 @@
       }
 
       .reply-more {
-        button {
+        a {
           font-size: 1.4rem;
         }
       }

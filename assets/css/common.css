@@ -374,11 +374,6 @@
   height: 6rem;
   line-height: 6rem;
   padding: 0 1.5rem;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-.gnb-link:hover {
-  color: var(--blue);
-  text-shadow: 0rem 0rem 0rem var(--blue);
 }
 .gnb-link::before {
   display: block;
@@ -391,6 +386,9 @@
   transform: translateX(-50%);
   background: #26a9de;
   transition: width 0.3s ease-in-out;
+}
+.gnb-link.is-active {
+  color: var(--blue);
 }
 .gnb-link.is-active::before, .gnb-link:hover::before {
   width: calc(100% - 3rem);
@@ -1101,6 +1099,16 @@
   color: var(--muted);
 }
 
+.no-posts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
 .line {
   position: relative;
   width: 0.1rem;
@@ -1193,14 +1201,14 @@
   display: flex;
   justify-content: flex-end;
 }
-.reply-area .reply-list .reply-more button {
+.reply-area .reply-list .reply-more a {
   padding: 0.4rem 1rem;
   border: 1px solid #e1e1e1;
   color: #474747;
   font-weight: 300;
   transition: border-color 0.2s ease;
 }
-.reply-area .reply-list .reply-more button:hover {
+.reply-area .reply-list .reply-more a:hover {
   border-color: #474747;
 }
 .reply-area .reply-list .content {
@@ -1228,8 +1236,6 @@
   font-weight: 300;
   color: var(--muted);
   padding: 10rem 0;
-  border: 1px solid #e1e1e1;
-  border-width: 1px 0;
 }
 
 .checkbox-group {
@@ -1320,6 +1326,8 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  height: 4.8rem;
+  max-height: 4.8rem;
 }
 
 .basic-list-date {
@@ -1664,7 +1672,7 @@
     width: 0.2rem;
     height: 0.2rem;
   }
-  .reply-area .reply-list .reply-more button {
+  .reply-area .reply-list .reply-more a {
     font-size: 1.4rem;
   }
   .reply-area .reply-apply .input-box {

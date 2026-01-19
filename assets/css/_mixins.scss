@@ -5,3 +5,9 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+@mixin line-clamp-with-height($lines: 2, $line-size: 1rem) {
+  @include line-clamp($lines);
+  height: $lines * $line-size;
+  max-height: $lines * $line-size;
+}
