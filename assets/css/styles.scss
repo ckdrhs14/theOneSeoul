@@ -389,6 +389,11 @@
         grid-template-columns: 1fr;
       }
     }
+
+    .post-row-title {
+      min-height: 5.76rem;
+      max-height: 5.76rem;
+    }
   }
 }
 
@@ -460,8 +465,9 @@
   font-weight: 700;
   color: #404040;
   letter-spacing: -0.096rem;
-  line-height: 1.2;
-  @include line-clamp-with-height(2, 2.4rem);
+  line-height: 120%;
+  @include line-clamp(2);
+  max-height: 5.76rem;
 }
 
 .post-row-desc {
@@ -640,6 +646,11 @@
 
     &.column {
       gap: 2rem;
+
+      .post-row-title {
+        min-height: 4.92rem;
+        max-height: 4.92rem;
+      }
     }
   }
 
@@ -651,6 +662,7 @@
 
   .post-row-title {
     font-size: 2.1rem;
+    max-height: 4.92rem;
   }
 
   .post-row-author-name {
@@ -755,6 +767,10 @@
 
   .section-left {
     width: 100%;
+
+    &+.line {
+      display: none;
+    }
   }
 
   .flag-blue,
@@ -776,6 +792,11 @@
           grid-template-columns: 1fr;
         }
       }
+
+      .post-row-title {
+        min-height: auto;
+        max-height: 4.32rem;
+      }
     }
   }
 
@@ -785,6 +806,7 @@
 
   .post-row-title {
     font-size: 1.8rem;
+    max-height: 4.32rem;
   }
 
   .post-row-author-name {
