@@ -20,7 +20,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../../assets/img/sub/sub-04.png) no-repeat center center/cover;
 }
 .sub-top.sub-05 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../../assets/img/sub/sub-05.jpg) no-repeat center center/cover;
+  background: url(../../assets/img/sub/sub-05.jpg) no-repeat center center/cover;
 }
 .sub-top.sub-06 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../../assets/img/sub/sub-06.png) no-repeat center center/cover;
@@ -29,7 +29,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../../assets/img/sub/sub-07.png) no-repeat center center/cover;
 }
 .sub-top.sub-08 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../../assets/img/sub/sub-08.jpg) no-repeat center center/cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%), url(../../assets/img/sub/sub-08.jpg) no-repeat center center/cover;
 }
 .sub-top.sub-09 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../../assets/img/sub/sub-09.png) no-repeat center center/cover;

@@ -493,7 +493,8 @@
   border-bottom: 1px solid #e1e1e1;
   transition: background 0.1s ease-in-out, color 0.1s ease-in-out;
 
-  &:hover {
+  &:hover,
+  &.is-active {
     background: var(--blue);
     text-decoration: none;
     color: #fff;
@@ -1403,6 +1404,16 @@
     flex-direction: column;
     gap: 2.4rem;
 
+    &-empty {
+      .no-comments {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: #999;
+        text-align: center;
+        padding: 8rem 0;
+      }
+    }
+
     .reply-item>div {
       display: flex;
       flex-direction: column;
@@ -2103,11 +2114,10 @@
   .footer-swiper {
     .footer-swiper-item {
       position: relative;
-      padding-bottom: 1rem;
+      padding: 1rem;
       display: flex;
       flex-direction: column;
       gap: 0;
-      padding: 0;
 
       .basic-list-no {
         color: rgba(213, 213, 213, 0.2);

@@ -411,6 +411,23 @@
   gap: 2rem;
   width: 100%;
 }
+.post-row.no-empty {
+  width: 100%;
+  min-height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: auto;
+}
+.post-row.no-empty p {
+  font-size: 2.4rem;
+  letter-spacing: -0.096rem;
+  font-weight: 600;
+  color: #404040;
+}
+.post-row.no-empty:hover {
+  background: transparent;
+}
 
 .post-row-thumb {
   display: block;
@@ -423,6 +440,10 @@
   border-radius: var(--radius-lg);
   background: #e5e7eb;
   overflow: hidden;
+  border: 1px solid transparent;
+}
+.post-row-img.no-image {
+  border: 1px solid #ddd;
 }
 .post-row-img img {
   transition: transform 0.4s ease-in-out;
@@ -655,10 +676,6 @@
   .hero-feature {
     height: auto;
     aspect-ratio: 337.5/238.24;
-  }
-  .hero-feature-image img {
-    -o-object-position: top;
-       object-position: top;
   }
   .sticky-area {
     position: static;

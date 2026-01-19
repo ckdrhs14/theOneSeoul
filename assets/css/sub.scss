@@ -28,8 +28,7 @@
   }
 
   &.sub-05 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-      url(../../assets/img/sub/sub-05.jpg) no-repeat center center / cover;
+    background: url(../../assets/img/sub/sub-05.jpg) no-repeat center center / cover;
   }
 
   &.sub-06 {
@@ -43,7 +42,7 @@
   }
 
   &.sub-08 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%),
       url(../../assets/img/sub/sub-08.jpg) no-repeat center center / cover;
   }
 
