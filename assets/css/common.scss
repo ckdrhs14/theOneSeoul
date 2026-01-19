@@ -641,8 +641,9 @@
   max-width: 48.9rem;
 
   .basic-list {
-    .basic-list-link {
+    .basic-list-title {
       color: #fff;
+      letter-spacing: -0.064rem;
     }
 
     .basic-list-item {
@@ -675,7 +676,7 @@
   align-items: start;
   padding: 1rem 0;
 
-  .basic-list-link {
+  .basic-list-title {
     color: #fff;
   }
 }
@@ -1265,6 +1266,7 @@
     position: relative;
     padding-bottom: 4rem;
     line-height: 1.4;
+    font-weight:300;
   }
 
 
@@ -1289,6 +1291,7 @@
     display: flex;
     align-items: center;
     gap: 3rem;
+    width:50%;
 
     &:hover {
 
@@ -1300,6 +1303,12 @@
           }
         }
       }
+    }
+    .no-empty {
+      text-align:center;
+      width:100%;
+      font-weight:300;
+      color:var(--muted);
     }
   }
 }
@@ -1450,6 +1459,17 @@
       justify-content: flex-end;
     }
   }
+  .no-empty {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:300;
+    color:var(--muted);
+    padding:10rem 0;
+    border:1px solid #e1e1e1;
+    border-width:1px 0;
+  }
 }
 
 .checkbox-group {
@@ -1540,7 +1560,7 @@
   padding-top: 1rem;
 }
 
-.basic-list-link {
+.basic-list-title {
   display: block;
   font-size: 2rem;
   margin: 0;
@@ -1550,7 +1570,7 @@
   @include line-clamp(2);
 }
 
-.basic-list-meta {
+.basic-list-date {
   margin: 0;
   font-size: 1.6rem;
   color: var(--muted);
@@ -1923,11 +1943,11 @@
     height: 10rem;
   }
 
-  .basic-list-link {
+  .basic-list-title {
     font-size: 1.8rem;
   }
 
-  .basic-list-meta {
+  .basic-list-date {
     font-size: 1.2rem;
   }
 
@@ -2018,6 +2038,9 @@
           flex: 0 0 auto;
         }
       }
+    }
+    .no-empty {
+      padding:5rem 0;
     }
   }
 

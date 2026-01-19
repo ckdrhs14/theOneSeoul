@@ -559,8 +559,9 @@
   gap: 2rem;
   max-width: 48.9rem;
 }
-.footer-latest .basic-list .basic-list-link {
+.footer-latest .basic-list .basic-list-title {
   color: #fff;
+  letter-spacing: -0.064rem;
 }
 .footer-latest .basic-list .basic-list-item::before, .footer-latest .basic-list .basic-list-item::after {
   display: none;
@@ -586,7 +587,7 @@
   align-items: start;
   padding: 1rem 0;
 }
-.footer-swiper-item .basic-list-link {
+.footer-swiper-item .basic-list-title {
   color: #fff;
 }
 
@@ -1065,6 +1066,7 @@
   position: relative;
   padding-bottom: 4rem;
   line-height: 1.4;
+  font-weight: 300;
 }
 .board-view .next-prev-box .thumb-label {
   font-size: 1.6rem;
@@ -1083,12 +1085,20 @@
   display: flex;
   align-items: center;
   gap: 3rem;
+  width: 50%;
 }
 .next-prev-box .prev-box:hover .next-btn svg path,
 .next-prev-box .prev-box:hover .prev-btn svg path,
 .next-prev-box .next-box:hover .next-btn svg path,
 .next-prev-box .next-box:hover .prev-btn svg path {
   fill: var(--blue);
+}
+.next-prev-box .prev-box .no-empty,
+.next-prev-box .next-box .no-empty {
+  text-align: center;
+  width: 100%;
+  font-weight: 300;
+  color: var(--muted);
 }
 
 .line {
@@ -1210,6 +1220,17 @@
   display: flex;
   justify-content: flex-end;
 }
+.reply-area .no-empty {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  color: var(--muted);
+  padding: 10rem 0;
+  border: 1px solid #e1e1e1;
+  border-width: 1px 0;
+}
 
 .checkbox-group {
   display: flex;
@@ -1288,7 +1309,7 @@
   padding-top: 1rem;
 }
 
-.basic-list-link {
+.basic-list-title {
   display: block;
   font-size: 2rem;
   margin: 0;
@@ -1301,7 +1322,7 @@
   overflow: hidden;
 }
 
-.basic-list-meta {
+.basic-list-date {
   margin: 0;
   font-size: 1.6rem;
   color: var(--muted);
@@ -1583,10 +1604,10 @@
     width: 10rem;
     height: 10rem;
   }
-  .basic-list-link {
+  .basic-list-title {
     font-size: 1.8rem;
   }
-  .basic-list-meta {
+  .basic-list-date {
     font-size: 1.2rem;
   }
   .pagination {
@@ -1653,6 +1674,9 @@
   .reply-area .reply-apply .input-box input {
     width: 100%;
     flex: 0 0 auto;
+  }
+  .reply-area .no-empty {
+    padding: 5rem 0;
   }
   .footer-swiper .footer-swiper-item {
     position: relative;
